@@ -1,0 +1,71 @@
+/* Selectores decendentes*/
+.quote p {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+.quote h1{
+    color: chartreuse;
+    font-style: normal;
+}
+
+.quote *{
+
+    color: aqua;
+} 
+/*Selector decendente directo*/
+.header > img {
+    height: 50px;
+}
+
+.header{
+    background-color: aqua;
+}
+
+/*Selectores combinados*/
+/* Estilo para los párrafos dentro del contenedor*/
+#container{
+    background-color: #ff0000;
+    padding: 10px;
+}
+#container p {
+    font-size: 16px;
+    background-color: #333;
+    text-align:right;
+    font-weight: bold;
+    color: #ffffff; /* Blanco */
+}
+
+/* Estilo para los párrafos dentro del contenedor*/
+
+#container p.highlight {
+    font-weight: bold;
+    color: #ff0000; /* Rojo */
+}
+
+
+/*Selectores de atributos*/
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+    padding: 10px;
+    margin: 20px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+
+a {
+
+    text-decoration: underline;
+    
+    font-style: italic;
+    
+    text-decoration: line-through;
+    
+    text-decoration: none;
+    
+    }

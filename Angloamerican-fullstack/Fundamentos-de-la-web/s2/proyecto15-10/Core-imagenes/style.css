@@ -1,0 +1,69 @@
+.amarillo{
+    background-color:#ffcc00 ;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.azul{
+    background-color:#67cbfd ;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: px;
+    padding: 0px;
+
+}
+.naranja{
+    background-color:#ff6669 ;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.verde{
+    background-color:#98ff96 ;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    padding: 0px;
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    margin:  5px;
+    
+    
+}
+
+p{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1px;
+    padding: 4px;
+
+}
+
+#mover{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+

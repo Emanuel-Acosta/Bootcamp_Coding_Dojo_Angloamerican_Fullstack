@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			form{
+				border: 2px solid;
+				padding: 10px;
+				width:500px;
+			}
+				
+		</style>
+	</head>
+	<body >
+		<form >
+			<h1>¡Registrate y únete a la comunidad!</h1>
+			<div>
+				<label for="nombre">Nombre: </label>
+				<input type="text" id="nombre" name="nombre" />
+			</div>
+			<br />
+			<div>
+				<label for="Apellido">Apellido: </label>
+				<input type="text" id="Apellido" name="Apellido" />
+			</div>
+			<br />
+			<div>
+				<label for="correo">Correo Electrónico: </label>
+				<input type="text" id="correo" name="correo" />
+			</div>
+			<br />
+			<div>
+				<label for="clave">Contraseña: </label>
+				<input type="password" id="clave" name="clave" />
+			</div>
+			<br />
+			<div>
+				<label for="Confirmar-clave">Confirmar Contraseña: </label>
+				<input type="password" id="Confirmar-clave" name="Confirmar-clave" />
+			</div>
+			<br />
+			<div>
+				<label for="fecha_nacimiento">Fecha de nacimiento: </label>
+				<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+			</div>
+			<br />
+			<div>
+				<label>Género:</label>
+				<input type="radio" id="Masculino" name="Masculino" value="Masculino" />
+				<label for="Masculino">Masculino</label>
+				<input type="radio" id="Femenino" name="Femenino" value="Femenino" />
+				<label for="Femenino">Femenino</label>
+				<input type="radio" id="Prefiero" name="Prefiero" value="Prefiero" />
+				<label for="Prefiero">Prefiero no decir</label>
+			</div>
+			<br />
+			<div>
+				<input type="checkbox" id="suscríbete" name="suscríbete" />
+				<label for="suscríbete">Suscríbete a nuestro boletín de noticias</label>
+			</div>
+			<br />
+			<div>
+				<label for="descripción">Una descripción de mi mismo: </label>
+				<br />
+				<textarea
+					id="descripción"
+					name="descripción"
+					rows="4"
+					cols="20"
+				></textarea>
+			</div>
+			<br />
+			<div>
+				<label for="intereses">Selecciona tus intereses: </label>
+				<br />
+				<select id="intereses" name="intereses">
+					<option value="Musica">Música</option>
+					<option value="Deportes">Deportes</option>
+					<option value="Viajes">Viajes</option>
+					<option value="Tecnología">Tecnología</option>
+				</select>
+			</div>
+			<br />
+			<br />
+			<input type="submit" value="¡Registrarse!" />
+		</form>
+	</body>
+</html>

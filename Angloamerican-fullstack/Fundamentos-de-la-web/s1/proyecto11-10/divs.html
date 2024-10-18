@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style2.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="contenedor">
+			<h1>Registro</h1>
+			<form action="/registro" method="post">
+				<div class="nombre">
+					<label>Tu nombre completo: </label>
+					<input
+						type="text"
+						name="nombre_completo"
+						placeholder="Ingresa tu nombre "
+					/>
+				</div>
+
+				<div class="correo">
+					<label>Correo electrónico: </label>
+					<input type="text" name="correo" placeholder="Ingresa tu correo " />
+				</div>
+
+				<div class="contrasena">
+					<label>Contraseña: </label>
+					<input
+						type="password"
+						name="contraseña"
+						placeholder="Ingresa tu contraseña"
+					/>
+				</div>
+
+				<div>
+					<input type="checkbox" name="suscribirse" id="suscribirse" checked />
+					<label for="suscribirse"
+						>Deseo suscribirme al boletín informativo.</label
+					>
+				</div>
+
+				<input id="button" type="submit" value="Registrarse" />
+			</form>
+		</div>
+	</body>
+</html>

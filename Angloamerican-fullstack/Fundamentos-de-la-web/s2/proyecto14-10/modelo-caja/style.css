@@ -1,0 +1,36 @@
+.primer{
+    background-color: #20b1aa;
+    color: aliceblue;
+    padding: 40px 70px;
+    margin: 10px;
+    font-size: small;
+    
+}
+
+.segundo{
+    background-color: #ff00fe ;
+    text-align: center;
+    color: aliceblue;
+    padding: 40px 70px ;
+    margin: 10px;
+    font-size: small;
+}
+
+.tercer{
+    background-color: #010080 ;
+    text-align: right;
+    color: aliceblue;
+    padding: 40px ;
+    margin: 10px;
+    font-size: small;
+    
+}
+
+h1{
+    text-align: center;
+    
+}
+
+
+
+

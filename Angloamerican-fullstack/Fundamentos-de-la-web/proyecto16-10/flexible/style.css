@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+.col-1 {
+    flex: 1; /*tamaño*/
+}
+
+.col-2 {
+    flex: 2; /*doble de tamaño*/
+}
+
+.col-3 {
+    flex: 3; /*triple del flex 1*/
+}

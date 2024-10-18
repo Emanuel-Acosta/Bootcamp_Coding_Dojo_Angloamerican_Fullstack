@@ -1,0 +1,56 @@
+body{
+    
+    font-family: "Sixtyfour Convergence", sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color:rgb(204, 189, 161);
+    font-size: 10px;
+    
+    
+}
+
+h1{
+    color: rgb(5, 31, 11);
+    text-align: center;
+}
+
+.contenedor{
+
+    background-color: rgb(219, 230, 195);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.nombre{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.correo{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.contrasena{
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+form{
+    margin: 10px;
+    background-color: rgb(172, 172, 192);
+    border-radius: 10px;
+    
+}
+    
+
+#button{
+    background-color:black;
+    color: beige;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    border-radius: 5px;
+    height: 30px;
+}

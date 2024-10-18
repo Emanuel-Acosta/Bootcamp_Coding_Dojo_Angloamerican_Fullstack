@@ -1,0 +1,65 @@
+img {
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    position: absolute;
+    border-radius: 100px;
+    border: 5px black solid;
+    left: 10%;
+    top: 10%;
+    box-shadow: 0px 5px 5px #888888;
+}
+
+.contenedor {
+    border: 2px black solid;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px #888888;
+}
+
+.contAzul {
+    background-color: #00bcd5;
+    width: 100%;
+    height: 140px;
+    box-shadow: 0px 5px 5px #888888;
+}
+
+.contBlanco {
+    padding-left: 1rem;
+    margin-top: 5rem;
+    font-size: 20px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+button {
+    position: absolute;
+    left: 60%;
+    top: 90%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: #eaf4fd;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px #888888;
+    text-shadow: 0px 5px 5px #888888;
+}
+
+* {
+    font-family: "Quantico", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-shadow: 0px 5px 5px #888888;
+}

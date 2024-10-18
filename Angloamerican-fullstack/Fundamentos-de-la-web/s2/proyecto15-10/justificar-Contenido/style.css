@@ -1,0 +1,27 @@
+#dojo {
+    width: 400px;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:column; /*column o row, row siempre es por defecto*/ 
+    /*column-reverse o row-reverse*/
+}
+#otro {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(97, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:row-reverse; /*column o row, row siempre es por defecto*/ 
+    /*column-reverse o row-reverse*/
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}

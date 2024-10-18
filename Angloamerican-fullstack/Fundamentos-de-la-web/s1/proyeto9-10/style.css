@@ -1,0 +1,43 @@
+
+/* comodin, para colocar lo que quiera*/
+* {
+    outline: 0.5px solid rgb(204, 12, 12);
+    font-size: 13px;
+}
+
+h1 {
+    color: rgb(35, 150, 35);
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(77, 59, 156);
+    font-size: 50px;
+}
+
+body {
+    background-color: gold;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+.is-orange {
+    color: rgb(158, 51, 43);
+}
+
+.is-dark-blue{
+    color: rgb(126, 160, 133);
+}
+
+p{
+    text-align: right;
+    font-size: 20px;
+}
+
+#titulo-principal{
+    color: rgb(33, 179, 184);
+    text-align: center;
+}
+

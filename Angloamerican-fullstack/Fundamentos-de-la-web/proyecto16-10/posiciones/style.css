@@ -1,0 +1,22 @@
+.div-relativo {
+    position: relative;
+    top: 100px;
+    left: 20px;
+    background-color: red;
+}
+
+.container{
+    height: 500px;
+    background-color: aqua;
+    margin: 30px;
+}
+
+.div-absoluto {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    left: 60px;
+    width: 1000px;
+    background-color: blue;
+
+}
