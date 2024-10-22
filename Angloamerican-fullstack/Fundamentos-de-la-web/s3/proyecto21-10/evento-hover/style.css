@@ -1,0 +1,21 @@
+/* resetea todos los valores de los elementos de html
+dejando margenes y rellenos en cero*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* slector id para mi boton*/
+#miBoton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer; /* corsor de la mano*/
+    transition: background-color 0.3s ease;
+}
+
+#miBoton:hover {
+    background-color: darkorchid;
+}
