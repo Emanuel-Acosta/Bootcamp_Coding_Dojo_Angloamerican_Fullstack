@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>Tiempo local</h1>
+			</div>
+			<div class="ali-ubicaciones">
+				<div><button id="buenosAires">Buenos Aires</button></div>
+				<div><button id="santiago">Santiago de Chile</button></div>
+			</div>
+			<div>
+				<label for="temperaturas">Mostrar temperatura en</label>
+				<select name="temperaturas" id="temperaturas">
+					<option value="centigrado">°C</option>
+				</select>
+			</div>
+		</header>
+        <!--pais-->
+        <div class="pais"><h1 id="cambioPais">Buenos Aires</h1></div>
+        <main id="mains">
+            <!--caja1-->
+            <div >
+                <div>
+                    <img id="hoyImg" src="img/nublado.jpg" alt="hoy">
+                </div>
+                <div>
+                    <h4 >Hoy</h4>
+                </div>
+                <div>
+                    <p id="hoyText">Nublado</p>
+                </div>
+                <div>
+                    <p id="hoyTemperatura">22°C° 15°C°</p>
+                </div>
+            </div>
+            <!--caja2-->
+            <div >
+                <div>
+                    <img id="mañanaImg" src="img/lluvioso.png" alt="">
+                </div>
+                <div>
+                    <h4>Mañana</h4>
+                </div>
+                <div>
+                    <p id="mañanaText">Lluvioso</p>
+                </div>
+                <div>
+                    <p id="mañanaTemperatura">20°C° 13°C°</p>
+                </div>
+            </div>
+            <!--caja3-->
+            <div id="miercoles">
+                <div>
+                    <img id="miercolesImg" src="img/tormenta.png" alt="">
+                </div>
+                <div>
+                    <h4>Miércoles</h4>
+                </div>
+                <div>
+                    <p id="miercolesText" >Tormentas</p>
+                </div>
+                <div>
+                    <p id="miercolesTemperatura" >18°C° 11°C°</p>
+                </div>
+            </div>
+            <!--caja4-->
+            <div id="jueves">
+                <div>
+                    <img id="juevesImg" src="img/parcialmente.png" alt="">
+                </div>
+                <div>
+                    <h4>Jueves</h4>
+                </div>
+                <div>
+                    <p id="juevesText">Parcialmente </br>nublado</p>
+                </div>
+                <div>
+                    <p id="juevesTemperatura">21°C° 14°C°</p>
+                </div>
+            </div>
+            <!--caja5-->
+            <div id="viernes">
+                <div>
+                    <img id="viernesImg" src="img/soleado.jpg" alt="">
+                </div>
+                <div>
+                    <h4>Viernes</h4>
+                </div>
+                <div>
+                    <p id="viernesText">Soleado</p>
+                </div>
+                <div>
+                    <p id="viernesTemperatura">24°C° 17°C°</p>
+                </div>
+            </div>
+        </main>
+        <footer id="footer1">
+            <div>
+                <p>Detente! Tiempo de cookies. Usamos cookies(tristemente, no las comestibles) para personalizar contenido y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. <a href="">Lee mas</a> </p>
+            </div>
+            <div><button id="acepto">Acepto</button></div>
+        </footer>
+	</body>
+</html>

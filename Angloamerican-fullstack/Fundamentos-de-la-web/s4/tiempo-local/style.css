@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{
+    background-color:#3399fe;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ali-ubicaciones{
+    display: flex;
+    height: 1rem;
+    width: 20rem;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+header button{
+    background-color: #3399fe;
+    border: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+header button:hover{
+    color: crimson;
+}
+
+
+
+/*pais*/
+.pais{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/*main*/
+main{
+    
+    display: flex;
+    justify-content: center;
+}
+
+main>div{
+    background-color:#ebebeb;
+    margin: 7px;
+    display: flex;
+    flex-direction:column;
+    height: 17rem;
+    width: 12rem;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+
+img{
+    width: 6rem;
+    height: 6rem;
+}
+
+/*footer*/
+
+footer{
+    background-color: black;
+    color: #ebebeb;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /*siempre el footer estara abajo*/
+}
+
+#acepto{
+    background-color: gold;
+    padding: 3px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+body{
+    min-height: 100vh; /*siempre has esto para emparejar el contenido hasta abajo*/
+    display: flex;
+    flex-direction: column;
+}
+
