@@ -129,4 +129,3 @@ else: #Recuerda: Solo se ejecuta en una salida normal, NO en un break
 
 
 
-print("hola" + "python")

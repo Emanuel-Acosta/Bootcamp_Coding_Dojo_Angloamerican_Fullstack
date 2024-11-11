@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabla países y capitales</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mt-4">Países y sus Capitales</h1>
+			<table class="table table-bordered table table-striped">
+				<thead class="thead">
+					<tr>
+						<th>País</th>
+						<th>Capital</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for fila in paises %}
+					<tr>
+						<td>{{fila.pais}}</td>
+						<td>{{fila.capital}}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

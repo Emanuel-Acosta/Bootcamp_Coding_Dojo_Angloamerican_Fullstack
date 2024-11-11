@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lotería Mexicana</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+	</head>
+	<body>
+		<header>
+			<h1>Lotería Mexicana</h1>
+		</header>
+
+		
+		<main
+			style="grid-template-columns: repeat({{ columnas }}, 70px); grid-template-rows: repeat({{ filas }}, 100px);"
+		>
+        
+			{% for casilla in range(casillas) %}
+			<div
+				class="casillas"
+				style="background-color: 
+                {% if casilla % 3 == 0 %}
+                    #287fe4; /* Azul */
+                {% elif casilla % 3 == 1 %}
+                    #eadb00; /* Amarillo */
+                {% else %}
+                    #dda8c4; /* Rosa */
+                {% endif %}"
+			>
+            {{ cartas[casilla] }}
+			</div>
+			{% endfor %}
+		</main>
+	</body>
+</html>

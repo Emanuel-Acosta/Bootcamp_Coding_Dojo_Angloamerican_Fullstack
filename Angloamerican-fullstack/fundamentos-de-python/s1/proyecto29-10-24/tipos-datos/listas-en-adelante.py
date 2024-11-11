@@ -70,6 +70,3 @@ print(frozen) #Imprime: ['Elsa', 'Anna']
 # list.reverse(): invierte el orden de los elementos, en su lugar.*
 # list.sort(): ordena los elementos de menor a mayor, o alfabéticamente para cadenas.
 
-num1= "5"
-num2=4
-print(num1+num2)

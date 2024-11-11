@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Visitas</title>
+	</head>
+	<body>
+		<h1>Visitas</h1>
+
+		<p>Esta página ha sido visitada {{visitas}} veces.</p>
+
+		<p><a href="/destruir_sesion">Resetear, al eliminar visitas</a></p>
+
+		<p>
+			<a href="/aumentar_dos"><button>Incrementar visitas en 2</button></a>
+		</p>
+
+		<p>
+			<a href="/reiniciar_visitas"><button>Reiniciar Visitas</button></a>
+		</p>
+
+		<form action="/incrementar_num" method="POST">
+			<label for="incremento"
+				>Ingrese la cantidad de visitas a incrementar:</label
+			>
+			<input type="number" id="incremento" name="incremento" required />
+			<button type="submit">Incrementar visitas</button>
+		</form>
+
+		<p>Esta página ha sido reiniciada {{reinicios}} veces.</p>
+	</body>
+</html>

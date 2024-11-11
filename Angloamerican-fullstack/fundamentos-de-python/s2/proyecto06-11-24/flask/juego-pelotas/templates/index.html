@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Pelotas</title>
+		<style>
+			header {
+				display: flex;
+				justify-content: center;
+			}
+			main {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.pelota {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				border-radius: 50%;
+				padding: 10px;
+				margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Juego de Pelotas</h1>
+		</header>
+		<main>
+			{% for pelota in range(pelotas) %}
+			<div class="pelota" style="background-color: {{color}};"> {{pelota + 1}}</div>
+			{% endfor %}
+		</main>
+	</body>
+</html>
