@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Contador de Naves Star Wars</title>
+    <style>
+        body {
+            background-color: black;
+            color: #FFE81F;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        .btn {
+            margin: 0.5rem;
+            font-size: 1.2rem;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido General estelar</h1>
+    </header>
+    <main>
+        <form action="/ingresar" method="POST">
+            <label class="form-label" for="usuario">Usuario de General:</label>
+            <input class="form-control" type="text" name="usuario">
+            <label class="form-label" for="password">Password:</label>
+            <input  type="password" name="password">
+            <input class="btn btn-primary" type="submit" value="Ingresar">
+            <!-- <button class="btn btn-primary" type="submit">Ingresar</button> -->
+        </form>
+    </main>
+    <footer>
+
+        <div class="star-wars-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="Logo de Star Wars" width="150">
+        </div>
+    </footer>
+</body>
+</html>

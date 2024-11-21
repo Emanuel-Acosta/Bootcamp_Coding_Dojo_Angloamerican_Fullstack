@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Contador de Naves Star Wars</title>
+    <style>
+        body {
+            background-color: black;
+            color: #FFE81F;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        .btn {
+            margin: 0.5rem;
+            font-size: 1.2rem;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .circulo{
+            width: 5rem;
+            height: 5rem;
+            margin: 1rem;
+            border-radius: 50%;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #img_p{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hola general <span style="color: white;">{{usuario}}!!!!!!</span></h1>
+        <h2>Ejercito de star Wars</h2>
+        <form action="/cerrar_session" method="post" style="display: inline;">
+            <input type="submit" class="btn-danger" value="Salir">
+        </form>
+    </header>
+    <main>
+        {%for i in range(numero_de_naves) %}
+        <div class="circulo">
+            <img id="img_p" src="{{ url_for('static', filename='img/nave.png') }}" alt="Nave Star Wars" width="50">
+        </div>
+        {% endfor%}
+    </main>
+    <footer>
+        <p>{{numero_de_naves}} Naves listas para atacar</p>
+        <form action="/mas_2" method="post" style="display: inline;">
+            <input type="submit" class="btn-success" value="Mas 2">
+        </form>
+
+        <form action="/panel_de_naves" method="post" style="display: inline;">
+            <input type="submit" class="btn-primary" value="Mas 1">
+        </form>
+        
+        <form action="/menos_1" method="post" style="display: inline;">
+            <input type="submit" class="btn-warning" value="Menos 1">
+        </form>
+
+        <form action="/destruir_session" method="post" style="display: inline;">
+            <input type="submit" class="btn-danger" value="Eliminar todas">
+        </form>
+
+        <div class="star-wars-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="Logo de Star Wars" width="150">
+        </div>
+    </footer>
+</body>
+</html>
