@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 shell = "*"
-flask = "*"
 pymysql = "*"
+flask = "*"
 
 [dev-packages]
 

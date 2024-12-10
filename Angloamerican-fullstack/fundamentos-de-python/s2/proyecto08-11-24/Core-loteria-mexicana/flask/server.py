@@ -13,6 +13,7 @@ cartas = [
     "50 El pescado", "51 La palma", "52 La maceta", "53 El arpa", "54 La rana"
 ]
 
+@app.route('/')
 @app.route('/loteria')
 def loteria():
     fila = 4
