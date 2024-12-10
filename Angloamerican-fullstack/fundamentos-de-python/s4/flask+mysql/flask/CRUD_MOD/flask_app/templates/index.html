@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create & Read</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container ">
+        <div style="display:flex; justify-content:space-between; align-items:end;">
+            <h1 class="mt-5">Usuarios</h1>
+            <a href="/nuevo_usuario"> Nuevo Usuario</a>
+        </div>
+        
+        <table class="table table-bordered mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>id</th>
+                    <th>Nombre Completo</th>
+                    <th>Email</th>
+                    <th>Fecha creacion</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for un_usuario in todos_usuarios %}
+                <tr>
+                    <td>{{ un_usuario.id }}</td> 
+                    <td>{{ un_usuario.nombre }}</td>
+                    <td>{{ un_usuario.email }}</td>
+                    <td>{{ un_usuario.created_at }}</td>
+                    <td>
+                        <a href="/usuarios/{{un_usuario.id}}" class="btn btn-link" > Ver</a>
+                        <a href="/usuarios/editar/{{un_usuario.id}}" class="btn btn-link" > Editar</a>
+                        <a href="/usuarios/eliminar/{{un_usuario.id}}" class="btn btn-link" > Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

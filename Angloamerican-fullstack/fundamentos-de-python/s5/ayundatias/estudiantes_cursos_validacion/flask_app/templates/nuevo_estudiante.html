@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: black;
+            color: yellow;
+        }
+        header, footer {
+            flex: 1;
+        }
+        main {
+            flex: 8;
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crear Estudiante</h1>
+    </header>
+    <main>
+        <form action="/estudiantes/guardar" method="POST"  >
+            <div>
+                <label for="curso_id" class="form-label">Curso:</label>
+                <select class="form-control" id="curso" name="curso_id" required >
+                    <option value="">--Selecciona una opcion--</option>
+                    {%for curso in cursos%}
+                    <option value="{{curso.id}}">{{curso.nombre}}</option>
+                    {%endfor%}
+
+                </select>
+            </div>
+            <div>
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="apellido" class="form-label">apellid:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+
+            </div>
+            <div>
+                <label for="edad" class="form-label">edad:</label>
+                <input type="number" class="form-control" id="edad" name="edad" required>
+
+            </div>
+            <div>
+                <br>
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </div>
+
+        </form>
+        <a href="/">Inicio</a>
+
+    </main>
+    <footer class="bg-dark text-white">
+        <p>@ 2024 coding dojo latam - Estudiantes y cursos</p>
+    </footer>
+</body>
+</html>

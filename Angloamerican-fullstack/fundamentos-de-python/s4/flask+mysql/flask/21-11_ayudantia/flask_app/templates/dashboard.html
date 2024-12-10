@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: black;
+            color: yellow;
+        }
+
+        header,
+        footer {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        main {
+            flex: 8;
+            padding: 2rem;
+            display: flex;
+        }
+
+
+        #main1, #main2{
+            flex: 1;
+            margin: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Nuevo Curso</h1>
+        </div>
+        <div>
+            <h1>Todos los cursos</h1>
+        </div>
+    </header>
+    <main>
+        
+        <div id="main1">
+            <form action="/cursos/guardar" method="POST" >
+                <div>
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+            </form>
+        </div>
+        <div id="main2">
+            <div class="card">
+                {%for curso in cursos%}
+                <div class="card-body">
+    
+                    <a href="/cursos/{{curso.id}}">{{curso.nombre}}</a>
+    
+                </div>
+                {%endfor%}
+            </div>
+            <hr>
+            <a href="/estudiantes/nuevo">Agregar estudiante</a>
+        </div>
+
+
+
+    </main>
+    <footer class="bg-dark text-white">
+        <p>@ 2024 coding dojo latam - Estudiantes y cursos</p>
+    </footer>
+</body>
+
+</html>

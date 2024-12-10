@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Principal</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+	</head>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+		main {
+			display: flex;
+
+			justify-content: space-around;
+		}
+		header {
+			display: flex;
+			justify-content: space-around;
+		}
+		#cursos {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		form {
+			display: flex;
+
+			align-items: center;
+		}
+		label {
+			margin-right: 10px;
+		}
+		a {
+			text-decoration: underline;
+			margin: 10px;
+		}
+	</style>
+	<body class="container">
+		<header class="container col-md-11 p-3">
+			<div>
+				<h1>Nuevo Curso</h1>
+			</div>
+			<div>
+				<h1>Todos los cursos</h1>
+			</div>
+		</header>
+		<main class="container col-md-11 p-3">
+			<div>
+				<form action="/cursos/guardar" method="POST">
+					<div>
+						<label for="nombre" class="form-label">Nombre:</label>
+					</div>
+					<div>
+						<input
+							type="text"
+							class="form-control"
+							id="nombre"
+							name="nombre"
+							required
+						/>
+					</div>
+				</form>
+			</div>
+			<div>
+				<div id="cursos">
+					{%for curso in cursos%}
+					<div>
+						<a href="/cursos/{{curso.id}}">{{curso.nombre}}</a>
+					</div>
+					{%endfor%}
+				</div>
+				<br>
+				<a href="/estudiantes/nuevo" >Agregar Estudiante</a>
+			</div>
+		</main>
+	</body>
+</html>
